@@ -1,0 +1,20 @@
+net_config:
+  name: l1
+  backbone_ckpt: /home/qinhe/pm/model_best_0.pt 
+  head_ckpt: /home/qinhe/model_best_0.pt 
+
+data_provider:
+  image_size: 512
+  train_batch_size: 8
+  base_batch_size: 8
+  test_batch_size: 1
+  n_worker: 8
+
+run_config:
+  n_epochs: 40
+  # base_lr: 0.00025
+  # base_lr: 0.001
+  base_lr: 0.0003
+  # base_lr: 0.00003
+  # base_lr: 0.000003
+  # base_lr: 0.0000002

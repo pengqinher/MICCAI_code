@@ -1,0 +1,16 @@
+net_config:
+  name: l1
+  ckpt: assets/distilled_checkpoints/l1.pt
+
+data_provider:
+  image_size: 512
+  train_batch_size: 16
+  base_batch_size: 16
+  test_batch_size: 16
+  n_worker: 16
+
+run_config:
+  n_epochs: 80
+  # base_lr: 0.00025
+  base_lr: 0.000003
+  # base_lr: 0.0000002
